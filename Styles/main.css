@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  text-transform: capitalize;
+  font-family: "Karla", sans-serif;
+  line-height: 1.8;
+  background-color: #98a6bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+i,
+a,
+button {
+  cursor: pointer;
+}
+
+.cards {
+  border-radius: 10px;
+  box-shadow: 0 0 5px #98a6bd;
+  overflow: hidden;
+  width: 350px;
+}
+@media (min-width: 800px) {
+  .cards {
+    width: 750px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+.cards > [class*=card] {
+  padding: 1.5em;
+}
+.cards > [class*=card] .card-header {
+  margin-bottom: 0.7em;
+}
+.cards > [class*=card].card-1 {
+  background-color: white;
+  grid-column: span 2;
+}
+.cards > [class*=card].card-1 .card-header {
+  color: #2ab2af;
+}
+.cards > [class*=card].card-1 > span {
+  color: #c0df34;
+  font-size: 1.2rem;
+}
+.cards > [class*=card].card-1 > p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #98a6bd;
+}
+.cards > [class*=card].card-2 {
+  background-color: #2ab2af;
+  color: white;
+}
+.cards > [class*=card].card-2 > .price {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+.cards > [class*=card].card-2 > .price span.num {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.cards > [class*=card].card-2 > .price span:last-child {
+  opacity: 0.8;
+}
+.cards > [class*=card].card-2 > a.signup-link {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  text-align: center;
+  background-color: #c0df34;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #898989;
+  transition-duration: 0.5s;
+}
+.cards > [class*=card].card-2 > a.signup-link:hover {
+  box-shadow: 0 0 5px white;
+}
+@media (min-width: 800px) {
+  .cards > [class*=card].card-2 > a.signup-link {
+    margin-top: 2.5em;
+  }
+}
+.cards > [class*=card].card-3 {
+  background-color: #50bebc;
+  color: white;
+}
+.cards > [class*=card].card-3 ul li {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=main.css.map */
