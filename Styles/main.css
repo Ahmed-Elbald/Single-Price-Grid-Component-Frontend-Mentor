@@ -30,7 +30,7 @@ body {
   text-transform: capitalize;
   font-family: "Karla", sans-serif;
   line-height: 1.8;
-  background-color: hsl(204, 43%, 93%);
+  background-color: #e5eff5;
   display: flex;
   justify-content: center;
   align-items: center;
